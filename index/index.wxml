@@ -1,0 +1,7 @@
+
+<!--模拟场景：点击列表中的某个音频跳转到播放页面，将音频数组、音频路径和id都传过来就可以接收到了-->
+
+<!-- is-while:是否显示循环图标；is-pre:是否显示上一首图标；is-next:是否显示下一首；is-time-out:是否显示定时器图标；voice的值就是需要播放的音频文件 -->
+<!-- 这些属性的值在组件中默认是false，如果需要可以进行修改添加，根据值设定是否需要显示，值为布尔值 -->
+<!-- 当只有一个图标时，播放按钮会默认居中，当有多个按钮时可以改变onPlay.css中的.buttons的justify-content的值为space-between -->
+<voice class='voice' is-while is-pre is-next is-time-out voice='{{audio}}' audios="{{audios}}" audio-id="{{id}}"></voice>
